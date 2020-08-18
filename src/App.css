@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+body {
+  overflow-x: hidden;
+  background-color: 	#e6e6fa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Header*/
+.main-image{
+  background: url(./image/book1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 60vh;
+  position: relative;
+  background-attachment: fixed;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.filter:after {
+background-color: rgba(0, 0, 0, 0.4);
+content: '';
+display: block;
+height: 100%;
+left: 0;
+top: 0;
+position: absolute;
+width: 100%;
+z-index: 1;
 }
-
-.App-link {
-  color: #61dafb;
+ /*Result*/
+.recipes{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ 
+/*Cards*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: none;
 }
