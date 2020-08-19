@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from 'react';
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Moment from "moment";
+import Moment from "react-moment";
 import DefaultImage from '../image/no-image-icon-23500.jpg';
 import Navbar from '../components/Navbar';
 import {RiArrowGoBackLine} from 'react-icons/ri';

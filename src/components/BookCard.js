@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import { Card, CardTitle, CardImg, CardText, CardBody } from 'reactstrap';
-import Moment from "moment";
+import Moment from "react-moment";
 import DefaultImage from '../image/no-image-icon-23500.jpg'
 
 const BookCard = (props) => {
@@ -22,7 +22,7 @@ const BookCard = (props) => {
                 </Moment>
                 
             </CardText>
-            <Link to={`books/${book.id}`} className='btn btn-info btn-block'>
+            <Link to={`/books/${book.id}`} className='btn btn-info btn-block'>
               Info
             </Link>
             </CardBody>
